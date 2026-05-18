@@ -1,4 +1,4 @@
-public class CustomQueue {
+public class CustomQueueAvdhesh {
 
     private int[] arr;
     private int size;
@@ -7,7 +7,7 @@ public class CustomQueue {
 
     // Constructor
     // Create array and set front & rear position
-    public CustomQueue(int size) {
+    public CustomQueueAvdhesh(int size) {
         this.arr = new int[size];
         this.size = size;
         this.frontPosition = 0;
@@ -66,7 +66,7 @@ class Main {
 
     public static void main(String[] args) {
 
-        CustomQueue myQueue = new CustomQueue(4);
+        CustomQueueAvdhesh myQueue = new CustomQueueAvdhesh(4);
 
         myQueue.enqueue(1);
         myQueue.enqueue(2);
