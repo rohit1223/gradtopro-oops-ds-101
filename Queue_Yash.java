@@ -1,9 +1,9 @@
- class Queue {
+ class Queue_Yash {
     private int[] arr;
     private int size;
     private int front;
     private int rear;
-    public Queue(int size) {
+    public Queue_Yash(int size) {
         this.arr = new int[size];
         this.size = size;
         this.front = -1;
@@ -58,7 +58,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Queue myQueue = new Queue(5);
+        Queue_Yash myQueue = new Queue_Yash(5);
 
         myQueue.enqueue(10);
         myQueue.enqueue(20);
