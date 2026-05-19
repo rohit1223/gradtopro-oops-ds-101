@@ -1,12 +1,11 @@
-class CustomQueue {
+public class CustomQueueAstha {
 
     int[] arr;
     int front;
     int rear;
     int size;
 
-    // Constructor
-    CustomQueue(int size) {
+    CustomQueueAstha(int size) {
 
         arr = new int[size];
         this.size = size;
@@ -15,10 +14,8 @@ class CustomQueue {
         rear = -1;
     }
 
-    // Enqueue -> Add Element
     void enqueue(int element) {
 
-        // Queue Full Check
         if(rear == size - 1) {
             System.out.println("Queue Full");
             return;
@@ -31,10 +28,8 @@ class CustomQueue {
         System.out.println(element + " inserted");
     }
 
-    // Dequeue -> Remove Element
     int dequeue() {
 
-        // Queue Empty Check
         if(front > rear) {
             System.out.println("Queue Empty");
             return -1;
@@ -49,7 +44,6 @@ class CustomQueue {
         return removedElement;
     }
 
-    // Display Queue
     void displayQueue() {
 
         if(front > rear) {
@@ -65,13 +59,10 @@ class CustomQueue {
 
         System.out.println();
     }
-}
-
-class Main {
 
     public static void main(String[] args) {
 
-        CustomQueue q = new CustomQueue(4);
+        CustomQueueAstha q = new CustomQueueAstha(4);
 
         q.enqueue(1);
         q.enqueue(2);
