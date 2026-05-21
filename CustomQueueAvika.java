@@ -1,11 +1,11 @@
-class Queue {
+class CustomQueueAvika {
 
     int[] arr;
     int front = 0;
     int rear = -1;
     int size;
 
-    Queue(int size) {
+    CustomQueueAvika(int size) {
         this.size = size;
         arr = new int[size];
     }
@@ -48,7 +48,7 @@ class Main {
 
     public static void main(String[] args) {
 
-        Queue q = new Queue(4);
+        CustomQueueAvika q = new CustomQueueAvika(4);
 
         q.enqueue(1);
         q.enqueue(2);
